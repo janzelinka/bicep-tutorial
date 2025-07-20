@@ -16,9 +16,8 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - name: Deploy Bicep Template
+      - name: Deploy Bicep to Resource Group
         run: |
-          az deployment sub create \
-            --location westeurope \
-            --template-file main.bicep \
-            --parameters environment=dev
+          az deployment group create \
+            --resource-group <YOUR_RESOURCE_GROUP_NAME> \
+            --template-file main.bicep
