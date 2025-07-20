@@ -16,6 +16,12 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
+      - name: Create Resource Group
+        run: |
+          az group create \
+            --name lesson01 \
+            --location westeurope
+
       - name: Deploy Bicep to Resource Group
         run: |
           az deployment group create \
