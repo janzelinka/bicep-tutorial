@@ -1,5 +1,5 @@
 resource storageAccount 'Microsoft.Storage/storageAccounts@2024-01-01' = {
-  name: 'storageaccountdev'
+  name: 'storageaccountdevzelopb'
   location: 'westeurope'
   sku: {
     name: 'Standard_LRS'
