@@ -26,17 +26,16 @@ az ad sp create-for-rbac \
 
 ### 3. Add Azure Credentials to GitHub Secrets
 
-## Go to your GitHub repository
+Go to your GitHub repository
+Navigate to:
 
-## Navigate to:
+Settings → Secrets and variables → Actions → New repository secret
 
-## Settings → Secrets and variables → Actions → New repository secret
+Create a new secret:
 
-## Create a new secret:
+Name: AZURE_CREDENTIALS
 
-## Name: AZURE_CREDENTIALS
-
-## Value: Paste the full JSON output from the previous command
+Value: Paste the full JSON output from the previous command
 
 ---
 
