@@ -19,5 +19,5 @@ jobs:
       - name: Deploy Bicep to Resource Group
         run: |
           az deployment group create \
-            --resource-group <YOUR_RESOURCE_GROUP_NAME> \
+            --resource-group lesson01 \
             --template-file main.bicep
